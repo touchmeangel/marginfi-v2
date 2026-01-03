@@ -26,12 +26,12 @@ Summarizing the above scenario, your \$100 deposit and \$50 borrow have a real L
 ```
 
 Most borrowing lending venues (including ours) publish only the "Asset" weight on the user-facing
-front end. The "Liability" Weights, while publically available, can be confusing. This means that
+front end. The "Liability" Weights, while publicly available, can be confusing. This means that
 when lending/borrowing some pair A/B, you may end up with a HIGHER LTV on a platform that shows a
-HIGHER asset weight, if the more-hidden liability wight is LOWER. 
+HIGHER asset weight, if the more-hidden liability weight is LOWER. 
 
 For example, if venue K shows A has a "90%" weight, and platform P shows A has a "85%" weight, when
-borrowing B against \$1 of A, you might assume Platform K will always win in LTV. Not neccessarily!
+borrowing B against \$1 of A, you might assume Platform K will always win in LTV. Not necessarily!
 If K has a Liability Weight of 1.2 for B, while P has a Liability Weight of 1.05, P wins!
 ```
 Venue K: 1.2/0.9 = 0.75 
@@ -87,7 +87,7 @@ For Maintenance purposes, Susie has 90 * .95 - 81.82 * 1.05 = -$0.411, Susie can
 
 Most borrow-lending platforms, including ours, offer Partial Liquidation. In a nutshell, this means
 the liquidator repays some of your debts and withdraws some of your assets, making the account more
-healthy. In exchange for performing this service, the liqudiator gets to keep some of the user's
+healthy. In exchange for performing this service, the liquidator gets to keep some of the user's
 funds as profit: we call this the "Liquidator Premium". A portion may also be paid out to the
 insurance fund. Typically, the liquidator premium and insurance fund payout is a few percent in
 total. Let's go back to the example with Susie:
